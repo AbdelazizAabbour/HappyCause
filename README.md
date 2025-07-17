@@ -31,7 +31,14 @@ Chaque mois, **une partie des bénéfices est reversée à des associations maro
 
 ## 📸 Aperçu
 
-> *Ajoutez ici des captures d’écran du site (page d’accueil, services, projet solidaire, etc.)*
+### 🎯 Page d'accueil
+![Accueil](styles/pic (2).png)
+
+### 💼 Section Services
+![Services](styles/pic (4).png)
+
+### ❤️ Projet solidaire
+![Projet solidaire](styles/pic (6).png)
 
 ---
 
