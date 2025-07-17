@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love_Fete</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="styles/stylle.css">
+</head>
+<body>
+<header class="header">
+        <canvas id="particles"></canvas>
+        <nav>
+            <div class="nav__logo">
+                <a href="#">
+                    <span class="logo-text">Love_Fete</span>
+                </a>
+            </div>
+            <ul class="nav__links" id="nav-links">
+                <li class="link"><a href="#home">Accueil</a></li>
+                <li class="link"><a href="#choose">À propos</a></li>
+                <li class="link"><a href="#services">Nos services</a></li>
+                <li class="link"><a href="#projet">Projet solidaire</a></li>
+                <li class="link"><a href="#testimonial">Témoignages</a></li>
+                <li class="link"><a href="#Contact">Contact</a></li>
+            </ul>
+            <div class="nav__menu__btn" id="menu-btn">
+                <span><i class="ri-menu-line"></i></span>
+            </div>
+        </nav>
+        <div class="section__container header__container" id="home">
+            <h1>Love Fête - Créons Ensemble des Moments Magiques</h1>
+            <p>
+                "Nous organisons des événements avec élégance et amour… Chaque fête crée une nouvelle joie, 
+                pour vous et pour ceux qui en ont besoin ♥ Découvrez nos services et soutenez notre mission !"
+            </p>
+            <form action="/">
+                <input type="text" placeholder="Rechercher un meuble" />
+                <button><i class="ri-search-line"></i></button>
+            </form>
+            <a href="#choose"><i class="ri-arrow-down-double-line"></i></a>
+        </div>
+</header>
+
+<style>
+        .profile-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .profile {
+            display: flex;
+            align-items: flex-start;
+            gap: 50px;
+            padding: 30px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .profile-img {
+            width: 280px;
+            height: 400px;
+            border-radius: 4px;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+        .profile-text {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #2c3e50;
+            max-width: 600px;
+            text-align: justify;
+        }
+
+        .home-link {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            color: #2c3e50;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .home-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        @media (max-width: 768px) {
+            .profile {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .profile-img {
+                width: 200px;
+                height: 300px;
+            }
+
+            .profile-text {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        
+        <h1>Nouhaila Aabbour</h1>
+        <div class="profile">
+            <img src="styles/logo2preview.png" alt="Nouhaila Aabbour" class="profile-img">
+            <p class="profile-text">
+                
+                Je suis Nouhaila Aabbour, une organisatrice d'événements passionnée avec plus de 5 ans d'expérience dans le domaine. Mon engagement va bien au-delà de la simple organisation de fêtes : je crois fermement que chaque célébration peut avoir un impact social positif. C'est pourquoi 15% de mes revenus sont systématiquement dédiés au soutien des orphelins et des maisons de retraite de notre région. Je coordonne régulièrement des visites et des animations dans ces établissements, créant des moments de joie et de partage. Mon approche unique combine l'excellence événementielle avec une mission sociale, transformant chaque événement en une opportunité de faire une différence dans la vie des personnes vulnérables. Chaque sourire que nous semons dans un cœur oublié est une victoire qui donne encore plus de sens à notre travail.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+<section class="about-section" id="choose">
+    <div class="section__container about__container">
+        <div class="about__content">
+            <div class="about__text">
+                <h2>À Propos de Love_Fete
+                </h2>
+                <p>Je suis Nouhaila Aabbour , organisatrice d'événements avec passion et engagement. Mon objectif dépasse la simple fête : une partie de mes revenus est dédiée au soutien des orphelins et des maisons de retraite. Chaque événement avec nous est une occasion de semer un sourire dans un cœur oublié.</p>
+                <div class="about__stats">
+                    <div class="stat">
+                        <h3>200+</h3>
+                        <p>Événements Réussis</p>
+                    </div>
+                    <div class="stat">
+                        <h3>50</h3>
+                        <p>Projets Solidaires</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100</h3>
+                        <p>Clients Satisfaits</p>
+                    </div>
+                </div>
+                <button class="btn">En savoir plus</button>
+            </div>
+            <div class="about__image">
+                <img src="styles/logo2preview.png" alt="Event Planner Portrait">
+                <div class="experience-badge">
+                    <span>2</span>
+                    <p>Années d'Expérience</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="services-section" id="services">
+    <div class="section__container services__container">
+        <div class="services__content">
+            <h2 class="section__title">Célébrez l'Élégance Marocaine</h2>
+            <p class="section__description">
+                Découvrez l'art de la célébration à la marocaine. Nous créons des événements qui allient tradition et modernité, 
+                où chaque détail raconte une histoire de générosité et de partage. Une partie de nos bénéfices soutient 
+                les associations caritatives locales, transformant chaque fête en un acte de solidarité.
+            </p>
+        </div>
+        <div class="event-carousel swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce" alt="Mariage Traditionnel">
+                    <div class="slide-caption">Mariages Traditionnels</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486" alt="Décoration de Table">
+                    <div class="slide-caption">Décorations Raffinées</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1577843728715-3c0c8a19c563" alt="Caftan Marocain Moderne">
+                    <div class="slide-caption">Collection de Caftans Luxueux</div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="services__buttons">
+            <button class="btn btn-primary">Découvrir Nos Services</button>
+            <button class="btn btn-secondary">Soutenir Une Cause</button>
+        </div>
+    </div>
+</section>
+
+<section id="products">
+        <div class="section__title">
+            <h2>Nos Produits Marocains Authentiques</h2>
+        </div>
+        
+        <div class="products__container" id="products-container">
+            <!-- Les produits seront ajoutés dynamiquement par JavaScript -->
+        </div>
+</section>
+
+
+<!-- hdi hia section li ghadi ikon fiha l3alam deyal lmaketla ou  l3ibat  -->
+<!-- hdi hia section li ghadi ikon fiha l3alam deyal lmaketla ou  l3ibat  -->
+<!-- hdi hia section li ghadi ikon fiha l3alam deyal lmaketla ou  l3ibat  -->
+<!-- hdi hia section li ghadi ikon fiha l3alam deyal lmaketla ou  l3ibat  -->
+
+
+
+
+
+
+
+
+
+
+    <section class="services-section">
+        <div class="container">
+            <h1 class="section-title">Nos Services <span>Maghrébins</span></h1>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="nourriture">Nourriture</button>
+                <button class="filter-btn" data-filter="bijoux">Bijoux</button>
+                <button class="filter-btn" data-filter="location">Location</button>
+                <button class="filter-btn" data-filter="evenements">Événements</button>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Plats traditionnels -->
+                <div class="service-item" data-category="nourriture">
+                    <div class="service-icon">
+                        <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea" alt="Tajine" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <h3>Tajines Traditionnels</h3>
+                    <p>Délicieux tajines préparés avec des ingrédients frais et authentiques</p>
+                </div>
+
+                <div class="service-item" data-category="nourriture">
+                    <div class="service-icon">
+                        <img src="styles/444.jpg" alt="Couscous Traditionnel Marocain" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <h3>Pestila</h3>
+                    <p>Pestila traditionnel avec légumes et viandes variées</p>
+                </div>
+
+                <div class="service-item" data-category="nourriture">
+                    <div class="service-icon">
+                        <img src="styles/111.jpg" alt="Couscous Traditionnel Marocain" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <h3>Pâtisseries Maroccain</h3>
+                    <p>Pâtisseries 100% magheribi</p>
+                </div>
+
+
+                <div class="service-item" data-category="nourriture">
+                    <div class="service-icon">
+                        <img src="styles/333.jpg" alt="Couscous Traditionnel Marocain" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <h3>Lham bl bareQoQe</h3>
+                    <p>Lham bl bareQoQe traditionnel avec viandes variées</p>
+                </div>
+
+                <div class="service-item" data-category="nourriture">
+                    <div class="service-icon">
+                        <img src="https://images.unsplash.com/photo-1579372786545-d24232daf58c" alt="Pâtisseries Marocaines" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <h3>Pâtisseries Orientales</h3>
+                    <p>Assortiment de gâteaux traditionnels et modernes</p>
+                </div>
+
+                <!-- Bijoux et Accessoires -->
+                <div class="service-item" data-category="bijoux">
+                    <div class="service-icon">
+                        <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a" alt="Bijoux" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <h3>Bijoux Traditionnels</h3>
+                    <p>Collection exclusive de bijoux marocains authentiques</p>
+                </div>
+
+                <div class="service-item" data-category="bijoux">
+                    <div class="service-icon">
+                        <img src="https://images.unsplash.com/photo-1531995811006-35cb42e1a022" alt="Accessoires" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <h3>Accessoires de Mariée</h3>
+                    <p>Parures complètes pour mariées traditionnelles</p>
+                </div>
+
+                <!-- Location -->
+                <div class="service-item" data-category="location">
+                    <div class="service-icon">
+                        <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3" alt="Salle" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <h3>Salles de Fête</h3>
+                    <p>Espaces élégants pour tous vos événements</p>
+                </div>
+
+                <div class="service-item" data-category="location">
+                    <div class="service-icon">
+                        <img src="https://images.unsplash.com/photo-1596436889106-be35e843f974" alt="Caftans" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <h3>Location de Caftans</h3>
+                    <p>Large collection de tenues traditionnelles</p>
+                </div>
+
+                <!-- Événements -->
+                <div class="service-item" data-category="evenements">
+                    <div class="service-icon">
+                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622" alt="Mariage" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <h3>Mariages de Luxe</h3>
+                    <p>Organisation complète de mariages traditionnels</p>
+                </div>
+
+                <div class="service-item" data-category="evenements">
+                    <div class="service-icon">
+                        <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3" alt="Fêtes" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <h3>Fêtes Personnalisées</h3>
+                    <p>Célébrations sur mesure pour tous vos moments spéciaux</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+
+
+
+  <!-- Section Image + Description -->
+  <section class="image-desc-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Colonne Image -->
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="image-wrapper position-relative">
+                    <img src="styles/11.jpg" 
+                         alt="marocaine" 
+                         class="img-fluid rounded-3 shadow"
+                         style="width: 100%; height: 500px; object-fit: cover;">
+                    <div class="image-overlay"></div>
+                    <div class="image-badge bg-gold text-white">
+                        <i class="fas fa-award me-2"></i> Nouha.com
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Colonne Description -->
+            <div class="col-md-6">
+                <div class="desc-content ps-md-5">
+                    <span class="section-subtitle text-gold">Équipement Professionnel</span>
+                    <h2 class="section-title mb-4">Matériel Audiovisuel de Qualité</h2>
+                    <p class="text-muted mb-4">
+                        Découvrez notre gamme complète d'équipements audiovisuels professionnels.
+                        Des caméras haute définition aux accessoires de montage, nous proposons
+                        tout le matériel nécessaire pour immortaliser vos événements.
+                    </p>
+                    
+                    <ul class="features-list list-unstyled mb-4">
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-gold me-2"></i>
+                            Caméras 4K et accessoires professionnels
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-gold me-2"></i>
+                            Équipement de montage vidéo complet
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-gold me-2"></i>
+                            Systèmes d'éclairage et de son
+                        </li>
+                    </ul>
+                    
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#" class="btn btn-gold px-4 py-2">
+                            <i class="fas fa-camera me-2"></i> Louer maintenant
+                        </a>
+                        <a href="#" class="btn btn-outline-dark px-4 py-2">
+                            <i class="fas fa-info-circle me-2"></i> Voir le catalogue
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="image-desc-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+        
+            <!-- Colonne Description -->
+            <div class="col-md-6">
+                <div class="desc-content ps-md-5">
+                    <span class="section-subtitle text-gold">Équipement Professionnel</span>
+                    <h2 class="section-title mb-4">Matériel Audiovisuel de Qualité</h2>
+                    <p class="text-muted mb-4">
+                        Découvrez notre gamme complète d'équipements audiovisuels professionnels.
+                        Des caméras haute définition aux accessoires de montage, nous proposons
+                        tout le matériel nécessaire pour immortaliser vos événements.
+                    </p>
+                    
+                    <ul class="features-list list-unstyled mb-4">
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-gold me-2"></i>
+                            Caméras 4K et accessoires professionnels
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-gold me-2"></i>
+                            Équipement de montage vidéo complet
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-gold me-2"></i>
+                            Systèmes d'éclairage et de son
+                        </li>
+                    </ul>
+                    
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#" class="btn btn-gold px-4 py-2">
+                            <i class="fas fa-camera me-2"></i> Louer maintenant
+                        </a>
+                        <a href="#" class="btn btn-outline-dark px-4 py-2">
+                            <i class="fas fa-info-circle me-2"></i> Voir le catalogue
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- Colonne Image -->
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="image-wrapper position-relative">
+                    <img src="styles/22.jpg" 
+                         alt="marocaine" 
+                         class="img-fluid rounded-3 shadow"
+                         style="width: 100%; height: 500px; object-fit: cover;">
+                    <div class="image-overlay"></div>
+                    <div class="image-badge bg-gold text-white">
+                        <i class="fas fa-award me-2"></i> Nouha.com
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="image-desc-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Colonne Image -->
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="image-wrapper position-relative">
+                    <img src="styles/33.jpg" 
+                         alt="marocaine" 
+                         class="img-fluid rounded-3 shadow"
+                         style="width: 100%; height: 500px; object-fit: cover;">
+                    <div class="image-overlay"></div>
+                    <div class="image-badge bg-gold text-white">
+                        <i class="fas fa-award me-2"></i> Nouha.com
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Colonne Description -->
+            <div class="col-md-6">
+                <div class="desc-content ps-md-5">
+                    <span class="section-subtitle text-gold">Équipement Professionnel</span>
+                    <h2 class="section-title mb-4">Matériel Audiovisuel de Qualité</h2>
+                    <p class="text-muted mb-4">
+                        Découvrez notre gamme complète d'équipements audiovisuels professionnels.
+                        Des caméras haute définition aux accessoires de montage, nous proposons
+                        tout le matériel nécessaire pour immortaliser vos événements.
+                    </p>
+                    
+                    <ul class="features-list list-unstyled mb-4">
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-gold me-2"></i>
+                            Caméras 4K et accessoires professionnels
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-gold me-2"></i>
+                            Équipement de montage vidéo complet
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-gold me-2"></i>
+                            Systèmes d'éclairage et de son
+                        </li>
+                    </ul>
+                    
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#" class="btn btn-gold px-4 py-2">
+                            <i class="fas fa-camera me-2"></i> Louer maintenant
+                        </a>
+                        <a href="#" class="btn btn-outline-dark px-4 py-2">
+                            <i class="fas fa-info-circle me-2"></i> Voir le catalogue
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="solidarity-section" id="projet">
+    <div class="section__container solidarity__container">
+        <div class="solidarity__content">
+            <h2 class="section__title">Ta fête a du cœur ❤️</h2>
+            <p class="section__description">
+                Chez Love_Fete, chaque célébration est une occasion de partager. Nous reversons mensuellement une partie 
+                de nos bénéfices aux orphelinats, maisons de retraite et familles dans le besoin à travers le Maroc. 
+                Notre équipe organise également des visites solidaires avec nos clients, créant ainsi des liens précieux 
+                entre les générations.
+            </p>
+            <div class="solidarity__buttons">
+                <button class="btn btn-primary">Voir nos actions</button>
+                <button class="btn btn-secondary">Soutenir une cause</button>
+            </div>
+        </div>
+
+        <div class="solidarity-carousel swiper">
+<div class="gallery-container">
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c" alt="Distribution de dons">
+            <div class="gallery-caption">Distribution de dons à Casablanca</div>
+        </div>
+        <div class="gallery-item">
+            <img src="styles/aj.jpeg" alt="Visite orphelinat">
+            <div class="gallery-caption">Visite à l'orphelinat de Fès</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b" alt="Activités seniors">
+            <div class="gallery-caption">Moments partagés à Rabat</div>
+        </div>
+    </div>
+
+    <!-- Modal for enlarged image view -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="modalCaption"></div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+</div>
+
+
+<script>
+// Get DOM elements
+const galleryItems = document.querySelectorAll('.gallery-item img');
+const modal = document.getElementById('imageModal');
+const modalImg = document.getElementById('modalImage');
+const modalCaption = document.getElementById('modalCaption');
+const closeBtn = document.querySelector('.close');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+
+let currentIndex = 0;
+
+// Add click event to all gallery images
+galleryItems.forEach((img, index) => {
+    img.addEventListener('click', () => {
+        modal.style.display = "block";
+        modalImg.src = img.src;
+        modalCaption.innerHTML = img.nextElementSibling.innerHTML;
+        currentIndex = index;
+    });
+});
+
+// Close modal
+closeBtn.addEventListener('click', () => {
+    modal.style.display = "none";
+});
+
+// Previous image
+prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+    modalImg.src = galleryItems[currentIndex].src;
+    modalCaption.innerHTML = galleryItems[currentIndex].nextElementSibling.innerHTML;
+});
+
+// Next image
+nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % galleryItems.length;
+    modalImg.src = galleryItems[currentIndex].src;
+    modalCaption.innerHTML = galleryItems[currentIndex].nextElementSibling.innerHTML;
+});
+
+// Close on outside click
+window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.style.display = "none";
+    }
+});
+
+// Keyboard navigation
+document.addEventListener('keydown', (e) => {
+    if (modal.style.display === "block") {
+        if (e.key === "ArrowLeft") {
+            prevBtn.click();
+        } else if (e.key === "ArrowRight") {
+            nextBtn.click();
+        } else if (e.key === "Escape") {
+            closeBtn.click();
+        }
+    }
+});
+</script>
+
+        <div class="impact-stats">
+            <div class="impact-stat">
+                <span class="number">50+</span>
+                <p>Familles Aidées</p>
+            </div>
+            <div class="impact-stat">
+                <span class="number">12</span>
+                <p>Partenaires Sociaux</p>
+            </div>
+            <div class="impact-stat">
+                <span class="number">24</span>
+                <p>Visites Annuelles</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="testimonial" class="animate">
+    <div class="section__title">
+        <h2>Témoignages</h2>
+        <p>Ce que nos clients disent de nous</p>
+    </div>
+    
+    <div class="testimonials-container">
+        <div class="testimonial-arrow left">
+            <i class="ri-arrow-left-s-line"></i>
+        </div>
+        
+        <div class="testimonials-track" id="testimonials-track">
+            <!-- Témoignage 1 -->
+            <div class="testimonial-card active">
+                <div class="testimonial-content">
+                    <div class="quote-icon">
+                        <i class="ri-double-quotes-r"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Nous avons fait appel à Love Fête pour notre mariage et le résultat a dépassé toutes nos attentes... 
+                        Et savoir qu'on contribue à une bonne action m'a profondément touchée."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Soumaya">
+                        </div>
+                        <div class="author-info">
+                            <h4>Soumaya</h4>
+                            <p>Mariée en Juin 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Témoignage 2 -->
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="quote-icon">
+                        <i class="ri-double-quotes-r"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Service impeccable, tout est préparé avec soin et amour ❤. L'équipe a su comprendre exactement 
+                        ce que je voulais pour l'anniversaire surprise de mon mari."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Nadia">
+                        </div>
+                        <div class="author-info">
+                            <h4>Nadia</h4>
+                            <p>Anniversaire surprise</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Témoignage 3 -->
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="quote-icon">
+                        <i class="ri-double-quotes-r"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Organiser notre fête de fiançailles avec Love Fête a été la meilleure décision. Professionnalisme, 
+                        créativité et une touche magique qui a émerveillé tous nos invités."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Leila">
+                        </div>
+                        <div class="author-info">
+                            <h4>Leila</h4>
+                            <p>Fiançailles</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="testimonial-arrow right">
+            <i class="ri-arrow-right-s-line"></i>
+        </div>
+        
+        <div class="testimonials-nav" id="testimonials-dots">
+            <!-- Les points seront générés par JavaScript -->
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section id="Contact" class="modern-font">
+        <div class="section__title">
+            <h2>Contact & Soutien</h2>
+            <p>Nous sommes à votre disposition pour créer l'événement de vos rêves ou recevoir votre soutien</p>
+        </div>
+        
+        <div class="contact__container">
+            <!-- WhatsApp -->
+            <div class="contact__card animate" style="animation-delay: 0.1s;">
+                <div class="contact__icon">
+                    <i class="ri-whatsapp-fill"></i>
+                </div>
+                <h3>WhatsApp</h3>
+                <p>Contactez-nous directement via WhatsApp pour une réponse rapide</p>
+                <a href="https://wa.me/212689026192" class="contact__link">Envoyer un message</a>
+            </div>
+            
+            <!-- Instagram -->
+            <div class="contact__card animate" style="animation-delay: 0.2s;">
+                <div class="contact__icon">
+                    <i class="ri-instagram-fill"></i>
+                </div>
+                <h3>Instagram</h3>
+                <p>Suivez-nous pour voir nos réalisations et nos actualités</p>
+                <a href="https://instagram.com/LoveFeteMaroc" class="contact__link">@LoveFeteMaroc</a>
+            </div>
+            
+            <!-- Faire un don -->
+            <div class="contact__card animate" style="animation-delay: 0.3s;">
+                <div class="contact__icon">
+                    <i class="ri-heart-fill"></i>
+                </div>
+                <h3>Soutenez-nous</h3>
+                <p>Votre soutien nous aide à continuer notre mission solidaire</p>
+                <a href="#donation" class="contact__link">Faire un don</a>
+            </div>
+            
+            <!-- Formulaire de contact -->
+            <div class="contact__form animate" style="animation-delay: 0.4s;">
+                <h3 class="form__title">Formulaire de Réservation</h3>
+                <form>
+                    <div class="form__group">
+                        <label for="name">Votre nom</label>
+                        <input type="text" id="name" class="form__control" required>
+                    </div>
+                    
+                    <div class="form__group">
+                        <label for="email">Votre email</label>
+                        <input type="email" id="email" class="form__control" required>
+                    </div>
+                    
+                    <div class="form__group">
+                        <label for="date">Date de l'événement</label>
+                        <input type="date" id="date" class="form__control" required>
+                    </div>
+                    
+                    <div class="form__group">
+                        <label for="type">Type d'événement</label>
+                        <select id="type" class="form__control" required>
+                            <option value="">Sélectionnez...</option>
+                            <option value="mariage">Mariage</option>
+                            <option value="anniversaire">Anniversaire</option>
+                            <option value="fete">Fête traditionnelle</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form__group">
+                        <label for="message">Votre message</label>
+                        <textarea id="message" class="form__control" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="form__submit">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__content">
+            <div class="footer__section">
+                <h3>Love_Fete</h3>
+                <p>Créons ensemble des moments magiques et solidaires pour illuminer la vie de tous.</p>
+                <div class="social__links">
+                    <a href="#"><i class="ri-facebook-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-linkedin-fill"></i></a>
+                </div>
+            </div>
+
+            <div class="footer__section">
+                <h4>Liens Rapides</h4>
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projet">Projets Solidaires</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <h4>Nos Services</h4>
+                <ul>
+                    <li>Organisation de Mariages</li>
+                    <li>Événements d'Entreprise</li>
+                    <li>Fêtes Privées</li>
+                    <li>Décoration</li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="ri-map-pin-line"></i> 123 Rue Hasan Esousi, Casablanca</li>
+                    <li><i class="ri-phone-line"></i> +212 689026192</li>
+                    <li><i class="ri-mail-line"></i> contact@lovefete.ma</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p>&copy; 2025 Nouhaila Aabbour & Abdelaziz Aabbour . Tous droits réservés.</p>
+            <div class="footer__links">
+                <a href="#">Mentions Légales</a>
+                <a href="#">Politique de Confidentialité</a>
+                <a href="#">Conditions d'Utilisation</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
